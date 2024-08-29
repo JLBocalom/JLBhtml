@@ -10,14 +10,17 @@ body {
     padding: 60px;
     text-align: center;
   }
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
+
+/* ------------- INICIO STYLE H ---------------*/
 h2 {
   text-align: center;
   text-transform: uppercase;
   color: #00acca;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 h1 {
   text-align: center;
@@ -25,7 +28,14 @@ h1 {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   color: #000000;
 }
+/* ------------- FIM STYLE H ---------------*/
+/* ------------- INICIO TOPNAV ---------------*/
   /* Navbar links */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 .topnav a {
     float: center;
     display: block;
@@ -39,6 +49,8 @@ h1 {
   background-color: #ddd;
   color: black;
 } 
+/* ------------- FIM TOPNAV ---------------*/
+/* ------------- INICIO COLUNA ---------------*/
 .column {
   float: left;
   width: 33.33%;
@@ -49,10 +61,75 @@ h1 {
   display: table;
   clear: both;
 }
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-.column {
-    width: 100%;
+  .column {
+      width: 100%;
+    }
   }
+/* ------------- FIM COLUNA ---------------*/
+/* ------------- INICIO CARD ---------------*/
+.flip-card {
+  background-color: transparent;
+  width: 449px;
+  height: 400px;
+  perspective: 1000px;
+  float: left;
 }
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* ------------- INICIO CARD PRODUCT ---------------*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+  float: inline-start;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+/* ------------- FIM CARD ---------------*/
