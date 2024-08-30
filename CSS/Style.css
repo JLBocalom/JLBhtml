@@ -72,10 +72,11 @@ h1 {
 /* ------------- INICIO CARD ---------------*/
 .flip-card {
   background-color: transparent;
-  width: 449px;
+  width: 435px;
   height: 400px;
   perspective: 1000px;
   float: left;
+  margin: 5px;
 }
 .flip-card-inner {
   position: relative;
