@@ -1,68 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Style.css">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Style.css">
+  <title>About</title>
 </head>
+
 <body>
-    <div class="header">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="slideshow-container; header">
+    <div class="mySlides">
+      <img src="CSS/imgheader.jpg" alt="imgheader1" style="width: 100%; height: 650px;">
     </div>
-    <div class="topnav">
-      <a href="Index.html">Principal</a>
-      <a href="Produtos.html">Produtos</a>
-      <a class="active" href="SobreNos.html">Sobre Nós</a>
-        <div class="login-container">
-          <form action="/action_page.php">
-          <input type="text" placeholder="Username" name="username">
-          <input type="text" placeholder="Password" name="psw">
-            <button type="submit">Sign in</button>
-            <button type="submit">Login</button>
-       </form>
-      </div>
+    <div class="mySlides">
+      <img src="CSS/imgheader1.jpg" alt="imgheader1" style="width: 100%; height: 650px;">
     </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="CSS/garagem.jpg" alt="garagem" style="width:435px;height:400px;">
-        </div>
-        <div class="flip-card-back">
-          <h2>Missão</h2> 
-          <p>Oque queremos para nosso futuro</p> 
-          <p>Proporcionar aos nossos clientes uma experiência de compra de veículos excepcional, oferecendo uma ampla gama de carros de alta qualidade, com atendimento personalizado e soluções financeiras acessíveis, garantindo a satisfação e a confiança em cada etapa do processo.</p> 
-        </div>
-      </div>
+    <div class="mySlides">
+      <img src="CSS/imgheader2.jpg" alt="imgheader2" style="width: 100%; height: 650px;">
     </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="CSS/visao.jpg" alt="garagem" style="width:435px;height:400px;">
-        </div>
-        <div class="flip-card-back">
-          <h2>Visão</h2> 
-          <p>Oque visamos dentro do ramo</p> 
-          <p>Ser reconhecida como a concessionária líder em inovação e excelência no atendimento ao cliente, transformando a maneira como as pessoas compram carros e estabelecendo novos padrões de qualidade e confiança no mercado automotivo até 2030.</p>
-      </div>
-      </div>
+    <div class="mySlides">
+      <img src="CSS/imgheader3.jpg" alt="imgheader3" style="width: 100%; height: 650px;">
     </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="CSS/valor.png" alt="garagem" style="width:435px;height:400px;">
-        </div>
-        <div class="flip-card-back">
-          <h2>Valores</h2> 
-          <p>Oque valorizamos</p> 
-          <p>1.Integridade: Agir com honestidade e transparência em todas as interações.<br><br>
-            2.Excelência: Buscar constantemente a melhoria contínua e a excelência em nossos produtos e serviços.<br><br>
-            3.Inovação: Estar na vanguarda das tendências e tecnologias automotivas para oferecer as melhores soluções aos nossos clientes.<br><br>
-            4.Satisfação do Cliente: Colocar as necessidades e expectativas dos clientes no centro de todas as nossas ações.<br><br>
-            5.Sustentabilidade: Promover práticas sustentáveis e responsáveis, contribuindo para um futuro mais verde.<br><br>
-            6.Colaboração: Valorizar o trabalho em equipe e a contribuição de cada colaborador para o sucesso da empresa.</p>
-          </div>
-      </div>
-    </div>     
   </div>
+  <div class="topnav">
+    <a href="Index.html">Principal</a>
+    <a href="Produtos.html">Produtos</a>
+    <a class="active" href="SobreNos.html">Sobre Nós</a>
+    <div class="login-container">
+      <form id="meuFormulario" method="post">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Password" name="psw">
+        <button type="submit" onclick="enviarPara('cad.html')">Sign In</button>
+        <button type="submit" onclick="enviarPara('Index.html')">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="CSS/garagem.jpg" alt="garagem" style="width:435px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h2>Missão</h2>
+        <p>Oque queremos para nosso futuro</p>
+        <p>Proporcionar aos nossos clientes uma experiência de compra de veículos excepcional, oferecendo uma ampla gama
+          de carros de alta qualidade, com atendimento personalizado e soluções financeiras acessíveis, garantindo a
+          satisfação e a confiança em cada etapa do processo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="CSS/visao.jpg" alt="garagem" style="width:435px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h2>Visão</h2>
+        <p>Oque visamos dentro do ramo</p>
+        <p>Ser reconhecida como a concessionária líder em inovação e excelência no atendimento ao cliente, transformando
+          a maneira como as pessoas compram carros e estabelecendo novos padrões de qualidade e confiança no mercado
+          automotivo até 2030.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="CSS/valor.png" alt="garagem" style="width:435px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h2>Valores</h2>
+        <p>Oque valorizamos</p>
+        <p>1.Integridade: Agir com honestidade e transparência em todas as interações.<br><br>
+          2.Excelência: Buscar constantemente a melhoria contínua e a excelência em nossos produtos e serviços.<br><br>
+          3.Inovação: Estar na vanguarda das tendências e tecnologias automotivas para oferecer as melhores soluções aos
+          nossos clientes.<br><br>
+          4.Satisfação do Cliente: Colocar as necessidades e expectativas dos clientes no centro de todas as nossas
+          ações.<br><br>
+          5.Sustentabilidade: Promover práticas sustentáveis e responsáveis, contribuindo para um futuro mais
+          verde.<br><br>
+          6.Colaboração: Valorizar o trabalho em equipe e a contribuição de cada colaborador para o sucesso da empresa.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <p>E-mai: garagemrouta66@gmail.com <br>
+      Contato: (99) 9999-9999 <br>
+      Siga nossas redes: <br><br>
+    </p>
+    <!-- Add font awesome icons -->
+    <a href="https://www.facebook.com/" target="_blank"
+      onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;" class="fa fa-facebook"></a>
+    <a href="https://br.linkedin.com/" target="_blank"
+      onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/" target="_blank"
+      onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;" class="fa fa-instagram"></a>
+    <a href="https://mail.google.com/" target="_blank"
+      onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;" class="fa fa-google"></a>
+  </div>
+
+
+  <!-------------------------JAVA script--------------------------->
+  <script>
+    //-------------------------------------------------------------------------------------TOP BUTTON
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    //-------------------------------------------------------------------------------------SLIDE
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slide = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slide.length) { slideIndex = 1 }
+      slide[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    //-------------------------------------------------------------------------------------CAMINHO BOTÃO
+    function enviarPara(caminho) {
+      document.getElementById('meuFormulario').action = caminho;
+    }
+  </script>
 </body>
+
 </html>

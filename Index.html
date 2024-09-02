@@ -1,26 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principalç</title>
+    <title>Principal</title>
     <link rel="stylesheet" href="CSS/Style.css">
 </head>
+
 <body>
-    <div class="header">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="slideshow-container; header">
+        <div class="mySlides">
+            <img src="CSS/imgheader.jpg" alt="imgheader1" style="width: 100%; height: 650px;">
+        </div>
+        <div class="mySlides">
+            <img src="CSS/imgheader1.jpg" alt="imgheader1" style="width: 100%; height: 650px;">
+        </div>
+        <div class="mySlides">
+            <img src="CSS/imgheader2.jpg" alt="imgheader2" style="width: 100%; height: 650px;">
+        </div>
+        <div class="mySlides">
+            <img src="CSS/imgheader3.jpg" alt="imgheader3" style="width: 100%; height: 650px;">
+        </div>
     </div>
     <div class="topnav">
         <a class="active" href="Index.html">Principal</a>
         <a href="Produtos.html">Produtos</a>
         <a href="SobreNos.html">Sobre Nós</a>
-          <div class="login-container">
-            <form action="/action_page.php">
-            <input type="text" placeholder="Username" name="username">
-            <input type="text" placeholder="Password" name="psw">
-            <button type="submit">Sign in</button>
-            <button type="submit">Login</button>
-         </form>
+        <div class="login-container">
+            <form id="meuFormulario" method="post">
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Password" name="psw">
+                <button type="submit" onclick="enviarPara('cad.html')">Sign In</button>
+                <button type="submit" onclick="enviarPara('Index.html')">Login</button>
+            </form>
         </div>
-      </div>
+    </div>
+    <div class="background-container">
+        <div class="row">
+            <div class="side">
+                <h2>Um pouco sobre nos</h2>
+                <h5 style="text-align: center;">Logo:</h5>
+                <div style="display: flex; justify-content: center;">
+                    <img src="CSS/logo.png" alt="logo">
+                </div>
+                <h2 style="text-align: center;">Nossa historia</h3>
+                    <h5>Garagem Rota 66
+                        Em 1949, na pequena cidade de Franca, São Paulo, nasceu a Garagem Rota 66. Fundada por João e
+                        Maria, um casal apaixonado por carros e pela liberdade das estradas, a garagem rapidamente se
+                        tornou um ponto de encontro para os amantes de automóveis e aventuras.<br><br>
+                        João, um mecânico habilidoso, tinha um talento especial para restaurar carros antigos. Ele podia
+                        transformar qualquer veículo desgastado em uma obra-prima brilhante. Maria, por outro lado, era
+                        uma excelente administradora e tinha um carisma que atraía clientes de todas as partes. Juntos,
+                        eles criaram um ambiente acolhedor e cheio de histórias.<br><br>
+                        A garagem ficava estrategicamente localizada na famosa Rota 66, uma estrada que simbolizava a
+                        liberdade e a aventura. Os viajantes que passavam por ali sempre faziam uma parada na Garagem
+                        Rota 66 para consertar seus carros, trocar histórias e tomar um café quente preparado por
+                        Maria.<br><br>
+                        Um dia, um viajante misterioso chegou à garagem com um carro clássico, um Ford 1932, que
+                        precisava de reparos urgentes. Ele estava a caminho de um encontro importante e não podia se
+                        atrasar. João, com sua habilidade e dedicação, trabalhou incansavelmente durante a noite para
+                        garantir que o carro estivesse pronto pela manhã.<br><br>
+                        Quando o sol nasceu, o viajante ficou impressionado com o trabalho de João e agradeceu
+                        profundamente. Ele revelou que era um famoso escritor e prometeu contar a história da Garagem
+                        Rota 66 em seu próximo livro. A partir desse dia, a garagem ganhou fama e se tornou um ícone na
+                        Rota 66.<br><br>
+                        Com o passar dos anos, a Garagem Rota 66 continuou a prosperar. João e Maria passaram seus
+                        conhecimentos para seus filhos, que mantiveram a tradição da família viva. A garagem não era
+                        apenas um lugar para consertar carros, mas um símbolo de paixão, dedicação e a magia das
+                        estradas.</h5>
+            </div>
+            <div class="main">
+                <h1>Bem Vindo a Garagem Route 66</h1><br><br>
+                <h4>Quando pensamos em nossos clientes, o que mais desejamos é construir relacionamentos sólidos e
+                    duradouros baseados em confiança, respeito e satisfação mútua. Aqui estão alguns pontos importantes
+                    sobre o que queremos com nossos clientes:</h4>
+                <h3 style="text-align: center;">1.<strong>Confiança e Transparência</strong></h3>
+                <h4>Queremos que nossos clientes confiem em nós. Isso significa ser transparente em todas as nossas
+                    interações, desde a comunicação clara sobre nossos produtos e serviços até a honestidade em relação
+                    a prazos e preços</h4><br><br>
+                <h3 style="text-align: center;">2.<strong>Satisfação e Qualidade</strong></h3>
+                <h4>Nosso objetivo é garantir que cada cliente esteja satisfeito com o que oferecemos. Isso envolve
+                    fornecer produtos e serviços de alta qualidade que atendam ou superem suas expectativas.</h4>
+                <br><br>
+                <h3 style="text-align: center;">3.<strong>Atendimento Personalizado/strong></h3>
+                <h4>Cada cliente é único, e queremos reconhecer e valorizar essa individualidade. Oferecer um
+                    atendimento personalizado, que considere as necessidades e preferências específicas de cada cliente,
+                    é fundamental.</h4><br><br>
+                <h3 style="text-align: center;">4.<strong>Feedback e Melhoria Contínua/strong></h3>
+                <h4>Valorizamos o feedback dos nossos clientes, pois ele nos ajuda a melhorar continuamente. Queremos
+                    criar um ambiente onde os clientes se sintam à vontade para compartilhar suas opiniões e sugestões.
+                </h4><br><br>
+                <h3 style="text-align: center;">5.<strong>Relacionamento de Longo Prazo</strong></h3>
+                <h4>Mais do que apenas transações, buscamos construir relacionamentos de longo prazo. Queremos ser a
+                    escolha confiável dos nossos clientes hoje e no futuro, acompanhando suas jornadas e evoluindo junto
+                    com eles.</h4><br><br>
+                <h3 style="text-align: center;">6.<strong>Experiência Positiva</strong></h3>
+                <h4>Desejamos proporcionar uma experiência positiva em todas as interações, desde o primeiro contato até
+                    o pós-venda. Cada ponto de contato deve ser uma oportunidade para encantar e fidelizar nossos
+                    clientes.</h4><br><br>
+                <h3 style="text-align: center;">7.<strong>Suporte e Soluções</strong></h3>
+                <h4>Estamos aqui para apoiar nossos clientes e oferecer soluções eficazes para suas necessidades e
+                    desafios. Queremos ser vistos como parceiros confiáveis que estão sempre prontos para ajudar.</h4>
+                <br><br>
+            </div>
+        </div>
+        <div class="footer">
+            <p>E-mai: garagemrouta66@gmail.com <br>
+                Contato: (99) 9999-9999 <br>
+                Siga nossas redes: <br><br>
+            </p>
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/" target="_blank"
+                onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+                class="fa fa-facebook"></a>
+            <a href="https://br.linkedin.com/" target="_blank"
+                onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+                class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/" target="_blank"
+                onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+                class="fa fa-instagram"></a>
+            <a href="https://mail.google.com/" target="_blank"
+                onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+                class="fa fa-google"></a>
+        </div>
+    </div>
+
+    <!-------------------------JAVA script--------------------------->
+    <script>
+        //-------------------------------------------------------------------------------------TOP BUTTON
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        //-------------------------------------------------------------------------------------SLIDE
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slide = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slide.length) { slideIndex = 1 }
+            slide[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3500); // Change image every 2 seconds
+        }
+        //-------------------------------------------------------------------------------------CAMINHO BOTÃO
+        function enviarPara(caminho) {
+            document.getElementById('meuFormulario').action = caminho;
+        }
+    </script>
+    <!--<script>
+        window.onscroll = fuction () { myFunction() };
+
+        var topnav = document.getElementById("topnav");
+        var sticky = topnav ? topnav.offsetTop : 0;
+
+        function myFunction() {
+            if (topnav && window.scrollY >= sticky) {
+                topnav.classList.add("sticky");
+            } else if (topnav) {
+                topnav.classList.remove("sticky");
+            }
+        }
+
+    </script>-->
 </body>
+
 </html>
