@@ -436,3 +436,43 @@ button:hover {
   background-color: #04AA6D;
 }
 /* ------------- FIM TELA DE CADASTRO---------------*/
+
+.bgimg1 {
+  /* The image used */
+  background-image: url("lambo.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg2 {
+  /* The image used */
+  background-image: url("bugati.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg3 {
+  /* The image used */
+  background-image: url("Maserati.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
